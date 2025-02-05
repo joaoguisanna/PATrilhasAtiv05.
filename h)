@@ -1,0 +1,86 @@
+using System;
+
+namespace PATrilhasAtiv05
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+	       Console.WriteLine("Digite uma letra");
+           string letra1 = Convert.ToString(Console.ReadLine());
+           
+           
+       
+       
+           
+
+           if (letra1 == "a")
+           {
+		 
+		 Console.WriteLine("essa letra é uma vogal: ");
+            Console.ReadLine();
+           } 
+           
+           
+           
+          if (letra1 == "e")
+
+           {
+		 
+		 Console.WriteLine("essa letra é uma vogal: ");
+            Console.ReadLine();
+           } 
+           
+          
+          
+          
+          
+           if (letra1 == "i")
+
+           {
+		 
+		 Console.WriteLine("essa letra é uma vogal: ");
+            Console.ReadLine();
+           } 
+          
+           
+           
+            if (letra1 == "o")
+
+           {
+		 
+		 Console.WriteLine("essa letra é uma vogal: ");
+            Console.ReadLine();
+           } 
+            
+            
+            
+             if (letra1 == "u")
+
+           {
+		 
+		 Console.WriteLine("essa letra é uma vogal: ");
+            Console.ReadLine();
+           } 
+             
+             
+           
+           
+           if  ( letra1 != "a") // (letra1 != "e") // (letra1 != "i") // (letra1 != "o") // (letra1 != "u")
+
+           {
+		 Console.WriteLine("essa letra é uma consoante:");
+		 Console.ReadLine();
+		 
+		 
+           } 
+           
+         
+           
+           
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
