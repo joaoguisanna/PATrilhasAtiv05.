@@ -1,0 +1,50 @@
+using System;
+
+namespace PATrilhasAtiv05
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+	       Console.WriteLine("Digite uma cor");
+           string cor1 = Convert.ToString(Console.ReadLine());
+           
+           
+       
+       
+           
+
+           if (cor1 == "vermelho")
+
+           {
+		 
+		 Console.WriteLine("a cor escolhida é vermelho: ");
+            Console.ReadLine();
+           } 
+           
+         
+           
+           if (cor1 == "azul")
+
+           {
+		 Console.WriteLine("a cor escolhida é azul:");
+		 Console.ReadLine();
+		 
+		 
+           } 
+           
+            if (cor1 == "verde")
+
+           {
+		 Console.WriteLine("a cor escolhida é verde:");
+		 Console.ReadLine();
+		 
+		 
+           } 
+           
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
