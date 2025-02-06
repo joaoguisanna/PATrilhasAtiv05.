@@ -1,40 +1,42 @@
 using System;
 
-namespace PATrilhasAtiv05
+namespace atv5
 {
 	class Program
 	{
 		public static void Main(string[] args)
 		{
 			
-	       Console.WriteLine("Digite uma letra");
-           string letra1 = Convert.ToString(Console.ReadLine());
-           
-           
-       
-       
-           
+        Console.WriteLine("Insira uma letra:");
 
-           if (letra1 == "a")
-           {
-		 
-		 Console.WriteLine("essa letra é uma vogal: ");
-            Console.ReadLine();
-           } 
-           
-           
-           
-          if (letra1 == "e")
+        char letra = Char.ToLower(Console.ReadKey().KeyChar);
 
-           {
-		 
-		 Console.WriteLine("essa letra é uma vogal: ");
-            Console.ReadLine();
-           } 
-           
-          
-          
-          
+      if (letra >= 'a' && letra <= 'z') // Verifica se é uma letra do alfabeto
+        {
+            switch (letra)
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    Console.WriteLine("\nA letra é uma vogal.");
+                    break;
+                default:
+                    Console.WriteLine("\nA letra é uma consoante.");
+                    break;
+            }
+        }
+        else
+        {
+            Console.WriteLine("\nIsso não é uma letra válida.");
+        }
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
           
            if (letra1 == "i")
 
