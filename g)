@@ -1,48 +1,36 @@
 using System;
 
-namespace PATrilhasAtiv05
+namespace atv5
 {
 	class Program
 	{
 		public static void Main(string[] args)
 		{
 			
-	       Console.WriteLine("Digite uma cor");
-           string cor1 = Convert.ToString(Console.ReadLine());
-           
-           
-       
-       
-           
+        Console.WriteLine("Escolha uma cor:");
+        Console.WriteLine("1 - Vermelho");
+        Console.WriteLine("2 - Azul");
+        Console.WriteLine("3 - Verde");
 
-           if (cor1 == "vermelho")
+   
+        string escolha = Console.ReadLine();
 
-           {
-		 
-		 Console.WriteLine("a cor escolhida é vermelho: ");
-            Console.ReadLine();
-           } 
-           
-         
-           
-           if (cor1 == "azul")
-
-           {
-		 Console.WriteLine("a cor escolhida é azul:");
-		 Console.ReadLine();
-		 
-		 
-           } 
-           
-            if (cor1 == "verde")
-
-           {
-		 Console.WriteLine("a cor escolhida é verde:");
-		 Console.ReadLine();
-		 
-		 
-           } 
-           
+        switch (escolha)
+        {
+            case "1":
+                Console.WriteLine("Você escolheu a cor Vermelho.");
+                break;
+            case "2":
+                Console.WriteLine("Você escolheu a cor Azul.");
+                break;
+            case "3":
+                Console.WriteLine("Você escolheu a cor Verde.");
+                break;
+            default:
+                Console.WriteLine("Opção inválida. Escolha entre 1, 2 ou 3.");
+                break;
+        }
+			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
